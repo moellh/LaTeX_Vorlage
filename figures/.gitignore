@@ -1,0 +1,6 @@
+# Delete this file, if any file is added
+# 
+# Ignore everything in this directory
+*
+# Except this file
+!.gitignore

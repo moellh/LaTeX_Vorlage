@@ -1,0 +1,1 @@
+Vorlage für meine LaTeX Dokumente

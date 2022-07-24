@@ -1,0 +1,52 @@
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[a4paper,lmargin={2cm},rmargin={2cm},tmargin={2.5cm},bmargin={2.5cm},headheight = {4cm}]{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{amsmath,amssymb,amstext,amsthm}
+\usepackage{mathtools}
+\usepackage{stackengine}
+\usepackage[printonlyused, nohyperlinks, nolist]{acronym}
+\usepackage{soul}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage[pdftex,hyperref,dvipsnames]{xcolor}
+\usepackage{listings}
+\usepackage[lined,algonl,boxed]{algorithm2e}
+\usepackage{tikz}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage[inline]{enumitem}
+\usepackage[headsepline]{scrlayer-scrpage}
+\usepackage{scrextend}
+\usepackage{subfig}
+\usepackage{stmaryrd}
+\usepackage{float}
+
+\pagestyle{scrheadings} 
+\usetikzlibrary{automata,positioning}
+\setuldepth{a}
+\setlength{\parindent}{0pt}
+\title{\thetitle}
+\subtitle{\thesubtitle}
+\author{\theauthor}
+\date{\thedate}
+\setlength{\fboxsep}{.3cm}
+\newcounter{exnum}
+\setcounter{exnum}{1}
+\ihead{\theauthor}
+\chead{\textbf{\thetitle}\\\thesubtitle}
+\ohead{\thedate}
+
+\newcommand{\surround}[1]{\begin{center}\noindent\fbox{ \parbox{.9\linewidth}{#1} }\end{center}}
+\newcommand{\tab}[1][0.5cm]{\hspace*{#1}}
+\newcommand{\sepdescription}[2]{\begin{description}[leftmargin=#1, style=nextline] #2 \end{description}}
+\newcommand{\nopic}[1][Please Insert Picture Here]{\begin{figure}[!h]\centering\includegraphics[width=0.8\textwidth]{styles/noPicture.pdf}\caption{#1}\end{figure}}
+\newcommand{\explain}[1]{{\small\textit{#1}}\vspace{.2cm}\\}
+\newcommand{\exercise}[1]{\section*{Aufgabe \theexnum\stepcounter{exnum}: #1}}
+
+\renewcommand{\theenumi}{(\alph{enumi})}
+\renewcommand{\labelenumi}{\text{\theenumi}}
